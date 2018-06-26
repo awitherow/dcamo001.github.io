@@ -84,7 +84,7 @@ footer {
   color: black;
 }
 
-.header a:hover {
+.header ul a:hover {
   color: blue;
   font-weight: 400;
 }
