@@ -1,293 +1,201 @@
 html {
-  font-family:       'Lato','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-  background-color:  transparent;
-  text-align:        left;
-  margin:            12px 20px 0 20px;
-  box-sizing:        border-box;
+  font-family: "Lato", "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  background-color: transparent;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 body {
-  background-color:white;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size:         35px;
-  font-weight:       300;
-  letter-spacing:    5px;
-  margin:            0;
-  padding:           12px 0;
-  letter-spacing:    0.0555556em;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 12px 0;
+  letter-spacing: 0.0555556em;
 }
 
 h2 {
-  font-size:         25px;
-  font-weight:       300;
-  letter-spacing:    1.2px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
 }
 
 h3 {
-  font-size:         18px;
-  font-weight:       300;
-  letter-spacing:    1.2px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
 }
 
 h4 {
-  font-size:         12px;
-  font-weight:       400;
-  letter-spacing:    1.15px;
-  line-height:       1;
-  margin:            0;
-  padding:           10px 0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
 }
 
 h5 {
-  font-size:         11px;
-  font-weight:       400;
-  letter-spacing:    1.5px;
-  line-height:       1;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1;
 }
 
 p {
-  font-size:         12px;
-  line-height:       1.75;
-  letter-spacing:    1.5px;
-  font-weight:       300;
-}
-
-table { 
-  table-layout:      fixed; 
-  width:             100%;
-}
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  FEATURES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-* {
-  box-sizing:        border-box;
-}
-  
-.tiles {
-  // 	display:       flex;
-  // 	flex-direction:column;
-  // 	flex-wrap:     wrap;
-  // 	height:        100vw;
-  //  margin:        0;
-  //  width:         1600px;
-  // }
-  
-.tiles {
-  -webkit-column-gap:  2px;
-  -webkit-column-count:3;
-  width:               100%;
-  margin:              24px 0 0 0;
-}
-  
-.masonryImage img{
-  display:           inline-block;
-  width:             100%;
-  height:            auto;
-  margin:            auto;
-  }
-
-.homepage img{
-  padding:          12px;
-  } 
-
-#mobile-table {
-  display:          none;
-}  
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Masonry Tiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-@media (max-width: 1528px) {
-  #container {
-    width:           100%;
-  }
-  
-  .tiles {
-    -webkit-column-count: 2;      
-  }
-
-  #mobile-table {
-    display:          none;
-  }  
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 1.5px;
+  font-weight: 300;
 }
 
 @media (max-width: 976px) {
-  #container {
-    width:           100%;
-    height:          auto;
-    justify-content: center;
-  }
-
-  #desktop-table {
-    display:          none;
-  }  
-
-  #mobile-table {
-    display:          flex;
-  } 
-
   h3 {
     font-size: 14px;
   }
 
-  .tiles {
-    -webkit-column-count: 1; 
-    margin:          12px 0 0 0; 
-  } 
-
   .menu {
-    display:         flex;
+    display: flex;
     justify-content: center;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   .menu ul.active {
-    display:         none;
+    display: none;
   }
 
   .menu ul {
-    display:         flex;
-    flex-direction:  column;
-    width:           100%;
-    position:        absolute;
-    top:             2.1%;
-    background:    #444444;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 2.1%;
+    background: #444444;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   .menu ul:after {
-    display:         flex;
-    font-size:       12px;
-    color:         black;
-    display:         block;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
-    content:         "<a href="./portfolio.html">portfolio</a>,<a href="./blog.html">blog</a>,<a href="./about.html">about</a>,<a href="./prints.html">prints</a>";
+    display: flex;
+    font-size: 12px;
+    color: black;
+    display: block;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
+    content: "<a href=" ./portfolio.html ">portfolio</a>,<a href=" ./blog.html
+      ">blog</a>,<a href=" ./about.html ">about</a>,<a href=" ./prints.html
+      ">prints</a>";
   }
 
   .menu li {
-    display:         flex;
-    padding:         2px 0 2px 0;
-    margin:          0 auto 0 auto;
+    display: flex;
+    padding: 2px 0 2px 0;
+    margin: 0 auto 0 auto;
   }
 
   .menu a {
-    display:         flex;
+    display: flex;
   }
 
   .toggle-nav {
-    display:         inline-block;
-    padding:         0 10px 2px 10px;
-    margin:          -36px 0 -8px 0;
-    color:         rgb(143, 143, 143);    
-    font-size:       24px;
+    display: inline-block;
+    color: rgb(143, 143, 143);
+    font-size: 24px;
   }
 
-  .toggle-nav:hover, .toggle-nav.active {
+  .toggle-nav:hover,
+  .toggle-nav.active {
     text-decoration: none;
   }
 
   #logo.responsive {
-    justify-content: center!important;
-    margin:          -16px 0 -32px 0!important;
-        transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
+    justify-content: center !important;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   #logotag.active {
-    display:         flex;
+    display: flex;
     justify-content: center;
-    margin:          20px 0 40px 0!important;
   }
 
   #logo.responsive.active {
-    justify-content: center!important;
-    padding:         100px 0 0 0;
-    transition:      .3s all ease-in-out;
-    -moz-webkit-transition: .3s all ease-in-out;
-    -ms-webkit-transition: .3s all ease-in-out;
-    -o-webkit-transition: .3s all ease-in-out;
+    justify-content: center !important;
+    transition: 0.3s all ease-in-out;
+    -moz-webkit-transition: 0.3s all ease-in-out;
+    -ms-webkit-transition: 0.3s all ease-in-out;
+    -o-webkit-transition: 0.3s all ease-in-out;
   }
 
   #logotag {
-    display:         flex;
+    display: flex;
     justify-content: center;
-    margin:          24px 0 40px 0!important;
   }
 
-  ul#navbar{
-    padding:         36px 0 4px 0;
+  ul#navbar {
   }
 }
- 
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Desktop Navbar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .toggle-nav {
-  display:           none;
+  display: none;
 }
 
-.menu ul, li {
-  display:           flex;
-  margin:            -54px -120px 0 0;
-  padding:           0 0 0 188px;
-  font-size:         12px;
-  line-height:       1.75;
-  letter-spacing:    1.5px;
-  font-weight:       400;
+.menu ul,
+li {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 1.5px;
+  font-weight: 400;
 }
 
 #logo {
-  display:           flex;
-  justify-content:   left;
-  margin:            0 8px -44px 0;
-  color:           black;
-  text-decoration:   none!important;
+  display: flex;
+  justify-content: left;
+  color: black;
+  text-decoration: none !important;
 }
 
 #logotag {
-  display:         flex;
-  margin:          36px 0 60px 8px;
+  display: flex;
 }
 
 .menu a {
-  color:           gray;
-  text-decoration:   none;
+  color: gray;
+  text-decoration: none;
 }
 
-.menu a:hover, .menu a.current-item {
-  text-decoration:   none;
-  color:           black;
-  font-weight:       bold;
+.menu a:hover,
+.menu a.current-item {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Desktop Navbar   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
