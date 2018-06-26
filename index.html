@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
-  <link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
-  <link href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
+  <link href="./assets/styles/main.css" rel="stylesheet" type="text/css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
@@ -13,6 +11,23 @@
 </head>
 
 <body>
+
+  <div id="menu-overlay">
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/fernandbee/">instagram</a>
+      </li>
+      <li>
+        <a href="./blog.html">blog</a>
+      </li>
+      <li>
+        <a href="./about.html">contact/about</a>
+      </li>
+      <li>
+        <a href="./prints.html">prints</a>
+      </li>
+    </ul>
+  </div>
 
   <div class="header">
     <div class="logo">
@@ -28,7 +43,7 @@
     </div>
 
     <nav class="menu">
-      <ul id="navbar" class="active">
+      <ul>
         <li>
           <a href="https://www.instagram.com/fernandbee/">instagram</a>
         </li>
@@ -43,82 +58,84 @@
         </li>
       </ul>
 
+      <button id="toggle-nav" href="#">&#9776;</button>
+
     </nav>
   </div>
 
   <div class="photo-grid">
     <div class="photo-container">
-      <a href="San Francisco Bay Area.html">
+      <a href="./places/sanfransicso.html">
         <img src="images/California/IMG_9761home.jpg" alt="Foggy Golden Gate Bridge, CA" />
       </a>
       <h3 align="center">Bay Area</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Oakland Berkeley.html">
+      <a href="./places/oakland-berkeley.html">
         <img src="images/California/IMG_0143home.jpg" alt="Golden UC Berkeley Campanile, CA" />
       </a>
       <h3 align="center">Oakland & Berkeley</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Bend and Montana.html">
+      <a href="./places/bend-montana.html">
         <img src="images/BendMontana/7R301971home.jpg" alt="Glacier National Park Avalanche Trail, Montana" />
       </a>
       <h3 align="center">Bend, OR & Montana</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Tulum.html">
+      <a href="./places/tulum.html">
         <img src="images/Tulum/IMG_8472home.jpg" alt="Birds eye Gulf of Mexico, Cancun, MX" />
       </a>
       <h3 align="center">Tulum, Mexico</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Mt Tam Bolinas.html">
+      <a href="./places/mt-tam-bolinas.html">
         <img src="images/California/7R300345home.jpg" alt="Golden Sunset and Bugs at Mt Tam, CA" />
       </a>
       <h3 align="center">Mt Tamalpais & Bolinas</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Big Sur.html">
+      <a href="./places/big-sur.html">
         <img src="images/California/IMG_9446home.jpg" alt="Big Sur, CA" />
       </a>
       <h3 align="center">Big Sur</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Sierra Nevadas.html">
+      <a href="./places/sierra-nevadas.html">
         <img src="images/California/7R300525home.jpg" alt="Red Alpine Sunset Glow, CA" />
       </a>
       <h3 align="center">Sierra Nevadas</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Point Reyes.html">
+      <a href="./places/point-reyes.html">
         <img src="images/California/IMG_9207home.jpg" alt="Point Reyes Shipwreck, CA" />
       </a>
       <h3 align="center">Point Reyes</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Charleston.html">
+      <a href="./places/charleston.html">
         <img src="images/Charleston/7R301121home.jpg" alt="Tree Tunnel at Battery Park, Charleston SC" />
       </a>
       <h3 align="center">Charleston, South Carolina</h2>
     </div>
 
     <div class="photo-container">
-      <a href="Hawaii.html">
+      <a href="./places//hawaii.html">
         <img src="images/Hawaii/GOPR0003home.jpg" alt="Humuhumunukunukuapua'a Shot Off the Na'pali Coast, HI" />
       </a>
       <h3 align="center">Hawaii, July 2015</h2>
     </div>
 
     <div class="photo-container">
-      <a href="CrossCountry.html">
+      <a href="./places/cross-country.html">
         <img src="images/CaliforniaRoadTrip/IMG_2094home.jpg" alt="10 Miles of Nothing on Route 80, NV" />
       </a>
       <h3 align="center">Cross Country Road Trip, July 2015</h2>
@@ -135,7 +152,7 @@
     </a>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
